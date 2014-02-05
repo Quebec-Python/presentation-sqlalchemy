@@ -1,6 +1,6 @@
 # Présentation de SQLAlchemy
 
-## Présentation de SQLAlchemy avec une base de données sqlite
+## Présentation de SQLAlchemy avec une base de données sqlite/mysql
 
 ### Obtenir des données
 
