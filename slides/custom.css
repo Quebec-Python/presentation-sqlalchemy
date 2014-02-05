@@ -1,0 +1,8 @@
+div.presentation, div.slide {
+    background: #26458C;
+}
+
+pre {
+    padding:5px;
+    font-family: "Droid Sans Mono", sans-serif;
+}

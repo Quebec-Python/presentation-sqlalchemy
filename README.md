@@ -1,4 +1,4 @@
-# presentation-sqlalchemy
+# Présentation de SQLAlchemy
 
 ## Présentation de SQLAlchemy avec une base de données MySQL
 
@@ -11,5 +11,3 @@
 ## Cas d'utilisation
 
 ### Lire un fichier CSV et insérer chaque ligne dans la base de données
-
-
