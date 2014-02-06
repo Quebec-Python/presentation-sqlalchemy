@@ -104,4 +104,8 @@
 
 ## Cas d'utilisation
 
-* Lire une série de fichier CSV et insérer leur contenu dans la BD
+### Lire une série de fichier CSV et insérer leur contenu dans la BD
+
+    !bash
+    $ cd src
+    $ python csv_to_db_example.py
