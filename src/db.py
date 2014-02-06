@@ -65,7 +65,7 @@ def init_db():
 if __name__ == '__main__':
     print(green(u"Création de la base de données en cours..."))
     init_db()
-    session = connect(debug=False)
+    session = connect(debug=True)
 
     print(green(u"Combien d'usager dans la bd ?"))
     nb_user = len(session.query(User).all())
@@ -98,6 +98,7 @@ if __name__ == '__main__':
     session.add(bernard)
     session.add(john)
     session.commit()
+
     print(
         green(u"Ajouté avec succès !")
     )

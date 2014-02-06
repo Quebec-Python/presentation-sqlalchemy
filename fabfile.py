@@ -18,9 +18,9 @@ def gen():
         local("landslide presentation.cfg")
 
 @task
-def deploy():
+def demo():
     """
-    Creates the VM with the database
+    Runs the src/db.py file
     """
-
-    pass
+    with lcd("src"):
+        local("python db.py")
