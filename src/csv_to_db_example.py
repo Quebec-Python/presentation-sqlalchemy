@@ -5,7 +5,7 @@ import csv
 from glob import glob
 from datetime import datetime
 
-from db import User, connect
+from db import User, connect, init_db
 
 CSV_PATH = os.path.join("..", "data", "*.csv")
 CSV_FILES = glob(CSV_PATH)
@@ -13,6 +13,7 @@ CSV_FILES.reverse()
 
 
 if __name__ == '__main__':
+    init_db()
     session = connect(debug=True)
 
     for csv_file in CSV_FILES:
