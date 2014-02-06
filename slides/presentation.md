@@ -2,6 +2,8 @@
 
 ## a.k.a. La magie des ORMs
 
+Repo Git: [http://goo.gl/so87LN](http://goo.gl/so87LN)
+
 ---
 
 ## ORM ?
@@ -31,8 +33,8 @@
     !python
     import sqlalchemy as sq
     from sq.ext.declarative import declarative_base
-    from sq import Column, Integer, String, DateTime, Date
-
+    from sq import Column, Integer, \
+        String, DateTime, Date
     Base = declarative_base()
 
     class User(Base):
