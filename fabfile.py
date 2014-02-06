@@ -13,7 +13,9 @@ def gen():
     """
         Generate the slides
     """
-    pass
+
+    with lcd("slides"):
+        local("landslide presentation.cfg")
 
 @task
 def deploy():
