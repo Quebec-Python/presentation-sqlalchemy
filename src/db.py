@@ -36,6 +36,8 @@ class User(Base):
 
 def connect(debug=False):
     path = os.path.join(CURRENT_DIRECTORY, "{}.db".format(DATABASE_NAME))
+    if not os.path.isfile(path):
+        sqlite.connect(path)
     engine = create_engine(
         'sqlite+pysqlite:///{}'.format(path),
         module=sqlite,
