@@ -74,6 +74,13 @@ Repo Git: [http://goo.gl/so87LN](http://goo.gl/so87LN)
 
 ---
 
+## Comment faire un JOIN ?
+
+	!python
+	# SELECT * FROM users INNER JOIN groups ON users.group_id = groups.id WHERE groups.id = 1;
+	session.query(User).all().join(groups, groups.id==1)
+---
+
 ## Comment ajouter des données ?
 
     !python
